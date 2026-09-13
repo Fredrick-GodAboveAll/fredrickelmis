@@ -34,12 +34,12 @@ export function LeaveFeature() {
 
           <Reveal delay={220}>
             <div className="rounded-2xl border border-[var(--line)] bg-white p-5 mb-3">
-              <span
-                className="material-symbols-outlined text-[18px] mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg"
+              <div
+                className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg"
                 style={{ background: '#eaf0ff', color: 'var(--blue)' }}
               >
-                calculate
-              </span>
+                <span className="material-symbols-outlined text-[18px]">calculate</span>
+              </div>
               <h3 className="text-sm font-semibold text-[var(--ink)] mb-1.5">Intelligent Leave Calculation</h3>
               <p className="text-sm text-[var(--muted)] leading-relaxed">
                 Balances account for working days, weekends, public holidays, leave periods and financial years —

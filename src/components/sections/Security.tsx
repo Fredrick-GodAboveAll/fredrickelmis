@@ -26,12 +26,12 @@ export function Security() {
           {POINTS.map((p, i) => (
             <Reveal key={p.title} delay={(i % 3) * 100}>
               <div className="rounded-2xl border border-[var(--line)] p-6 h-full">
-                <span
-                  className="material-symbols-outlined text-[20px] flex h-10 w-10 items-center justify-center rounded-xl mb-4"
+                <div
+                  className="flex h-10 w-10 items-center justify-center rounded-xl mb-4"
                   style={{ background: '#eef0f4', color: 'var(--ink)' }}
                 >
-                  {p.icon}
-                </span>
+                  <span className="material-symbols-outlined text-[20px]">{p.icon}</span>
+                </div>
                 <h3 className="text-sm font-semibold text-[var(--ink)] mb-1.5">{p.title}</h3>
                 <p className="text-sm text-[var(--muted)] leading-relaxed">{p.desc}</p>
               </div>

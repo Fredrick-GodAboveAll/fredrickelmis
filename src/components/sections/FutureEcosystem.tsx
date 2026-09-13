@@ -30,12 +30,12 @@ export function FutureEcosystem() {
             <Reveal key={m.title} delay={(i % 3) * 100}>
               <div className="rounded-2xl border border-[var(--line)] p-6 h-full">
                 <div className="flex items-start justify-between mb-4">
-                  <span
-                    className="material-symbols-outlined text-[20px] flex h-10 w-10 items-center justify-center rounded-xl"
+                  <div
+                    className="flex h-10 w-10 items-center justify-center rounded-xl"
                     style={{ background: '#eaf0ff', color: 'var(--blue)' }}
                   >
-                    {m.icon}
-                  </span>
+                    <span className="material-symbols-outlined text-[20px]">{m.icon}</span>
+                  </div>
                   <span
                     className="rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide"
                     style={{
