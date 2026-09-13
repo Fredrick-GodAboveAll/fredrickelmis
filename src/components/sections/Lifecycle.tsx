@@ -27,12 +27,12 @@ export function Lifecycle() {
           {STAGES.map((s, i) => (
             <Reveal key={s.label} delay={i * 90} className="flex items-center">
               <div className="flex flex-col items-center gap-3 rounded-2xl border border-[var(--line)] bg-white px-5 py-6 w-32">
-                <span
-                  className="material-symbols-outlined text-[22px] flex h-11 w-11 items-center justify-center rounded-full"
+                <div
+                  className="flex h-11 w-11 items-center justify-center rounded-full"
                   style={{ background: 'var(--ink)', color: 'white' }}
                 >
-                  {s.icon}
-                </span>
+                  <span className="material-symbols-outlined text-[22px]">{s.icon}</span>
+                </div>
                 <p className="text-xs font-semibold text-[var(--ink)]">{s.label}</p>
               </div>
               {i < STAGES.length - 1 && (

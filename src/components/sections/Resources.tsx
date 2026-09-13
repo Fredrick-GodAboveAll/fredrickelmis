@@ -26,12 +26,12 @@ export function Resources() {
           {CATEGORIES.map((c, i) => (
             <Reveal key={c.title} delay={i * 60}>
               <a href="#" className="flex items-center gap-5 py-6 group">
-                <span
-                  className="material-symbols-outlined text-[20px] flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
+                <div
+                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
                   style={{ background: '#eaf0ff', color: 'var(--blue)' }}
                 >
-                  {c.icon}
-                </span>
+                  <span className="material-symbols-outlined text-[20px]">{c.icon}</span>
+                </div>
                 <div className="flex-1">
                   <h3 className="text-base font-semibold text-[var(--ink)]">{c.title}</h3>
                   <p className="text-sm text-[var(--muted)]">{c.desc}</p>

@@ -32,12 +32,12 @@ export function AfricaSection() {
           {CONTEXTS.map((c, i) => (
             <Reveal key={c.label} delay={i * 100}>
               <div className="rounded-2xl border border-[var(--line)] p-6 h-full">
-                <span
-                  className="material-symbols-outlined text-[22px] mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl"
+                <div
+                  className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl"
                   style={{ background: '#eaf0ff', color: 'var(--blue)' }}
                 >
-                  {c.icon}
-                </span>
+                  <span className="material-symbols-outlined text-[22px]">{c.icon}</span>
+                </div>
                 <p className="text-sm font-medium text-[var(--ink)]">{c.label}</p>
               </div>
             </Reveal>
